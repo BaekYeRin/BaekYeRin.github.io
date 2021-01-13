@@ -5,15 +5,41 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Portfolio</title>
+    <title>YeRin Baek's Portfolio</title>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-</head>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	
+	<script>
+	$(window).ready(function() {
+	  var typingBool = false;
+	  var typingIdx = 0;
+	  var typingTxt = "백예린 포트폴리오"; // 타이핑될 텍스트를 가져온다
+	  
+	  typingTxt = typingTxt.split(""); // 한글자씩 자른다.
+	  if (typingBool == false) {
+		// 타이핑이 진행되지 않았다면
+		typingBool = true;
 
+		var tyInt = setInterval(typing, 100); // 반복동작
+	  }
+
+	  function typing() {
+		if (typingIdx < typingTxt.length) {
+		  // 타이핑될 텍스트 길이만큼 반복
+		  $(".typing").append(typingTxt[typingIdx]); // 한글자씩 이어준다.
+		  typingIdx++;
+		} else {
+		  clearInterval(tyInt); //끝나면 반복종료
+		}
+	  }
+	});
+	</script>
+</head>
 <body>
     <div id="mobile-menu-open" class="shadow-large">
         <i class="fa fa-bars" aria-hidden="true"></i>
@@ -27,20 +53,11 @@
             <li>
                 <a href="#about">About</a>
             </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>
+			<li>
+                <a href="#skills">Skills</a>
+            </li>			
             <li>
                 <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
             </li>
         </ul>
     </header>
@@ -48,9 +65,9 @@
 
     <div id="lead">
         <div id="lead-content">
-            <h1>Ryan Fitzgerald</h1>
-            <h2>Software Engineer</h2>
-        </div>
+			<h2>Developer</h2>
+            <p class="typing" style="margin: 0;font-size: 39px; color: #fff;"></p>
+        </div>		
         <!-- End #lead-content -->
 
         <div id="lead-overlay"></div>
@@ -64,25 +81,53 @@
     </div>
     <!-- End #lead -->
 
-    <div id="about">
+    <div id="about" class="background-alt">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-3" style="width: 20%">
                     <h2 class="heading">About Me</h2>
                 </div>
-                <div class="col-md-8">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat. Donec
-                        eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. Quisque et tincidunt libero. Donec id pharetra justo. Proin euismod lacinia dolor, eu scelerisque justo tempus pharetra. Vivamus nunc justo, finibus
-                        ut nisl sed, euismod rhoncus nulla. Proin sed magna egestas, egestas ante et, congue eros. In consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.
-                    </p>
+                <div class="col-md-9" style="width: 79%">
+                    <div class="card-div">
+						<div class="card-img-div">
+							<img class="card-img" src="images/BAEKYERIN.jpg" />
+						</div>
+						<div class="card-content">
+							<h3 class="card-name-eng">BAEK - YE RIN</h3>
+							<h3 class="card-name">백예린</h3>
+							<p><img class="email-img" src="images/email.png" />yell727@naver.com</p>
+						</div>
+					</div>
+					<div class="about-list" style="display: inline-block;">
+						<h4>개발자 과정</h4>
+						<ul>
+							<li>2018.09 ~ 재직 중 : 스마트포트테크놀로지 근무</li>
+							<li>2018.03 ~ 2020.02 : 한국방송통신대학교 컴퓨터과학과 졸업</li>
+							<li>2017.06 ~ 2017.11 : 한국정보기술연구원의 공공 데이터 기반 자바 애플리케이션 개발자 교육 수료</li>
+							<li>2014.03 ~ 2017.02 : 한양여자대학교 정보경영과(컴퓨터공학계열) 졸업</li>
+						</ul>
+						
+						<h4>수상내역</h4>
+						<ul>
+							<!-- <li>2017.02.06 : 취업역량개발(한양여자대학교) - 취업역량개발 우수상</li> -->
+							<li>2016.11.17 : 2016학년도 졸업작품전 장려상 - 한양여자대학교 정보경영과</li>
+							<li>2016.06.10 : 서울 창조전문인력 육성사업 캠퍼스CEO 창업아이디어 공모전 특선 - 한양여자대학교</li>
+						</ul>
+						
+						<h4>자격증</h4>
+						<ul>
+							<li>2019.11.22 : 정보처리기사</li>
+							<li>2017.07.11 : SQL 개발자</li>
+							<li>2016.11.18 : 정보처리산업기사</li>
+						</ul>
+					</div>
                 </div>
             </div>
         </div>
     </div>
     <!-- End #about -->
 
-    <div id="experience" class="background-alt">
+    <!-- <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
             <div data-date="September 2015 – September 2016">
@@ -109,72 +154,314 @@
                 </p>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- End #experience -->
-
-    <div id="education">
-        <h2 class="heading">Education</h2>
-        <div class="education-block">
-            <h3>University of Ottawa</h3>
-            <span class="education-date">Sept 2016 - Sept 2017</span>
-            <h4>Bachelor of Science in Computer Science</h4>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-            </p>
-        </div>
-        <!-- End .education-block -->
-
-        <div class="education-block">
-            <h3>University of Ottawa</h3>
-            <span class="education-date">Sept 2016 - Sept 2017</span>
-            <h4>Bachelor of Science in Computer Science</h4>
-            <ul>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-            </ul>
-        </div>
-        <!-- End .education-block -->
+	
+	<div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+			<li>JAVA</li>
+            <li>HTML</li>
+			<li>CSS</li>
+			<li>JavaScript</li>
+			<li>jQuery</li>
+			<li>Spring Framework</li>
+			<li>MySQL</li>
+			<li>Oracle</li>
+			<li>MSSQL</li>
+			<li>Phoenix</li>
+			<li>Linux</li>
+        </ul>
     </div>
-    <!-- End #education -->
-
+    <!-- End #skills -->
+	
     <div id="projects" class="background-alt">
         <h2 class="heading">Projects</h2>
         <div class="container">
             <div class="row">
-                <div class="project shadow-large">
+				<div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/project.jpg" />
+                        <img src="images/project/no_image.png" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Project Name Here</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                        </p>
-                        <a href="#">View Project</a>
+                        <h3>통합 MRO 시스템 구축</h3>
+                        <h4>발주처 : 에어프레미아</h4>
+						<p>- 기간 : 2021. 01 ~ 진행 중</p>
+						<p>- 수행업무 : 통합 MRO 시스템 구축을 위한 분석 진행 중</p>
+						<!-- <p>- 관련 기술 : JAVA, Spring Framework, HTML, CSS, JavaScript, jQuery, MySQL</p> -->
+                        <div class="skill-div">
+							<span class="skill-span">JAVA</span>
+							<span class="skill-span">Kotlin</span>
+							<span class="skill-span">React</span>
+							<span class="skill-span">Spring Framework</span>
+							<span class="skill-span">Spring Cloud</span>
+							<span class="skill-span">MariaDB</span>
+							<span class="skill-span">Redis</span>
+						</div>
+						<!-- <a href="#">View Project</a> -->
                     </div>
                     <!-- End .project-info -->
                 </div>
                 <!-- End .project -->
-
+				
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/project.jpg" />
+                        <img src="images/project/project_kiat.png" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Project Name Here</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                        </p>
-                        <a href="#">View Project</a>
+                        <h3>K-SENS 활용 e-HRD 시스템 고도화</h3>
+                        <h4>발주처 : 한국산업기술진흥원</h4>
+						<p>- 기간 : 2020. 09 ~ 2020. 12</p>
+						<p>- 수행업무 : 부서현황, 역량 및 경력관리, 결재관리 개발</p>
+						<!-- <p>- 관련 기술 : JAVA, Spring Framework, HTML, CSS, JavaScript, jQuery, MySQL</p> -->
+                        <div class="skill-div">
+							<span class="skill-span">JAVA</span>
+							<span class="skill-span">HTML</span>
+							<span class="skill-span">CSS</span>
+							<span class="skill-span">JavaScript</span>
+							<span class="skill-span">jQuery</span>
+							<span class="skill-span">Spring Framework</span>
+							<span class="skill-span">MySQL</span>
+						</div>
+						<!-- <a href="#">View Project</a> -->
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+				
+				<div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project/project_fts.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>ADS-B 기반 실시간 항공기 추적 운항 통제시스템 개발</h3>
+                        <h4>발주처 : 중소기업기술개발지원사업</h4>
+						<p>- 기간 : 2020. 06 ~ 진행 중</p>
+						<p>- 수행업무 : 항공기 위치 시각화 모듈 및 고도 그래프 화면 개발</p>
+						<!-- <p>- 관련 기술 : JAVA, Spring Framework, HTML, CSS, JavaScript, jQuery, Phoenix</p> -->
+						<div class="skill-div">
+							<span class="skill-span">JAVA</span>
+							<span class="skill-span">HTML</span>
+							<span class="skill-span">CSS</span>
+							<span class="skill-span">JavaScript</span>
+							<span class="skill-span">jQuery</span>
+							<span class="skill-span">Spring Framework</span>
+							<span class="skill-span">Phoenix</span>
+						</div>
+                        <!-- <a href="#">View Project</a> -->
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+				
+				<div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project/project_crew.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>FOCS(Flight Operation Control System)</h3>
+                        <h4>발주처 : 스마트포트테크놀로지 솔루션</h4>
+						<p>- 기간 : 2020. 03 ~ 2020. 04</p>
+						<p>- 수행업무 : DB 변경(Oracle -> Phoenix) 및 승무원 WEB BRIEFING, 일일 운항 스케줄 신청/승인 기능 추가 개발</p>
+						<!-- <p>- 관련 기술 : JAVA, Spring Framework, HTML, CSS, JavaScript, jQuery, Phoenix</p> -->
+						<div class="skill-div">
+							<span class="skill-span">JAVA</span>
+							<span class="skill-span">HTML</span>
+							<span class="skill-span">CSS</span>
+							<span class="skill-span">JavaScript</span>
+							<span class="skill-span">jQuery</span>
+							<span class="skill-span">Spring Framework</span>
+							<span class="skill-span">Phoenix</span>
+						</div>
+                        <!-- <a href="#">View Project</a> -->
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+				
+				<div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project/project_diana.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>영업관리 App 구축</h3>
+                        <h4>발주처 : Diana</h4>
+						<p>- 기간 : 2020. 02 ~ 2020. 08</p>
+						<p>- 수행업무 : 견적서 작성 및 관리 기능 개발</p>
+						<!-- <p>- 관련 기술 : JAVA, HTML, CSS, JavaScript, jQuery, Swift, MSSQL, SQLite</p> -->
+						<div class="skill-div">
+							<span class="skill-span">JAVA</span>
+							<span class="skill-span">HTML</span>
+							<span class="skill-span">CSS</span>
+							<span class="skill-span">JavaScript</span>
+							<span class="skill-span">jQuery</span>
+							<span class="skill-span">Swift</span>
+							<span class="skill-span">MSSQL</span>
+							<span class="skill-span">SQLite</span>
+						</div>
+                        <!-- <a href="#">View Project</a> -->
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+				
+				<div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project/project_aodb.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>AODB(Airport Operation Database)</h3>
+                        <h4>발주처 : 스마트포트테크놀로지 솔루션</h4>
+						<p>- 기간 : 2020. 01 ~ 2020. 02</p>
+						<p>- 수행업무 : DB 변경(Oracle -> Phoenix) 및 기능 개선</p>
+						<!-- <p>- 관련 기술 : JAVA, Spring Framework, HTML, CSS, JavaScript, jQuery, Phoenix</p> -->
+						<div class="skill-div">
+							<span class="skill-span">JAVA</span>
+							<span class="skill-span">HTML</span>
+							<span class="skill-span">CSS</span>
+							<span class="skill-span">JavaScript</span>
+							<span class="skill-span">jQuery</span>
+							<span class="skill-span">Spring Framework</span>
+							<span class="skill-span">Phoenix</span>
+						</div>
+                        <!-- <a href="#">View Project</a> -->
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+				
+				<div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project/no_image.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>차세대 부킹플랫폼 구축</h3>
+                        <h4>발주처 : 제주항공</h4>
+						<p>- 기간 : 2019. 09 ~ 2019. 12</p>
+						<p>- 수행업무 : 기내식, 통합멤버십 기능 개발</p>
+						<!-- <p>- 관련 기술 : JAVA, Spring Framework, HTML, CSS, JavaScript, jQuery, Oracle, DB2</p> -->
+						<div class="skill-div">
+							<span class="skill-span">JAVA</span>
+							<span class="skill-span">HTML</span>
+							<span class="skill-span">CSS</span>
+							<span class="skill-span">JavaScript</span>
+							<span class="skill-span">jQuery</span>
+							<span class="skill-span">Spring Framework</span>
+							<span class="skill-span">Oracle</span>
+							<span class="skill-span">DB2</span>
+						</div>
+                        <!-- <a href="#">View Project</a> -->
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+				
+				<div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project/project_ncl.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>홈페이지 NEW CLASS</h3>
+                        <h4>발주처 : 제주항공</h4>
+						<p>- 기간 : 2019. 05 ~ 2019. 08</p>
+						<p>- 수행업무 : NEW CLASS, CodeShare 부가서비스 개발</p>
+						<!-- <p>- 관련 기술 : JAVA, Spring Framework, HTML, CSS, JavaScript, jQuery, DB2</p> -->
+						<div class="skill-div">
+							<span class="skill-span">JAVA</span>
+							<span class="skill-span">HTML</span>
+							<span class="skill-span">CSS</span>
+							<span class="skill-span">JavaScript</span>
+							<span class="skill-span">jQuery</span>
+							<span class="skill-span">Spring Framework</span>
+							<span class="skill-span">DB2</span>
+						</div>
+                        <!-- <a href="#">View Project</a> -->
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+				
+				<div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project/project_afa.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>FOCS(Flight Operation Control System)</h3>
+                        <h4>발주처 : 스마트포트테크놀로지 솔루션</h4>
+						<p>- 기간 : 2019. 01 ~ 2019. 04</p>
+						<p>- 수행업무 : 일일 운항 스케줄 개발</p>
+						<!-- <p>- 관련 기술 : JAVA, Spring Framework, HTML, CSS, JavaScript, jQuery, Oracle</p> -->
+						<div class="skill-div">
+							<span class="skill-span">JAVA</span>
+							<span class="skill-span">HTML</span>
+							<span class="skill-span">CSS</span>
+							<span class="skill-span">JavaScript</span>
+							<span class="skill-span">jQuery</span>
+							<span class="skill-span">Spring Framework</span>
+							<span class="skill-span">Oracle</span>
+						</div>
+                        <!-- <a href="#">View Project</a> -->
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+				
+				<div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project/project_kisf.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>사회통합 프로그램 홈페이지 구축</h3>
+                        <h4>발주처 : 한국이민재단</h4>
+						<p>- 기간 : 2018. 10 ~ 2019. 01</p>
+						<p>- 수행업무 : 결제 기능 및 결제 관련 페이지 개발</p>
+						<!-- <p>- 관련 기술 : JAVA, Spring Framework, HTML, CSS, JavaScript, jQuery, MySQL</p> -->
+						<div class="skill-div">
+							<span class="skill-span">JAVA</span>
+							<span class="skill-span">HTML</span>
+							<span class="skill-span">CSS</span>
+							<span class="skill-span">JavaScript</span>
+							<span class="skill-span">jQuery</span>
+							<span class="skill-span">Spring Framework</span>
+							<span class="skill-span">MySQL</span>
+						</div>
+                        <!-- <a href="#">View Project</a> -->
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+				
+				<div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project/project_fids.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>FIDS(Flight Information Display System)</h3>
+                        <h4>발주처 : 스마트포트테크놀로지 솔루션</h4>
+						<p>- 기간 : 2018. 09 ~ 2018. 09</p>
+						<p>- 수행업무 : 디스플레이 통제 관리 및 디스플레이 페이지 메이커 개발</p>
+						<!-- <p>- 관련 기술 : JAVA, Spring Framework, HTML, CSS, JavaScript, jQuery, Oracle</p> -->
+						<div class="skill-div">
+							<span class="skill-span">JAVA</span>
+							<span class="skill-span">HTML</span>
+							<span class="skill-span">CSS</span>
+							<span class="skill-span">JavaScript</span>
+							<span class="skill-span">jQuery</span>
+							<span class="skill-span">Spring Framework</span>
+							<span class="skill-span">Oracle</span>
+						</div>
+                        <!-- <a href="#">View Project</a> -->
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -183,64 +470,19 @@
         </div>
     </div>
     <!-- End #projects -->
-
-    <div id="skills">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <li>JavaScript</li>
-            <li>Java</li>
-        </ul>
-    </div>
-    <!-- End #skills -->
-
-    <div id="contact">
-        <h2>Get in Touch</h2>
-        <div id="contact-form">
-            <form method="POST" action="https://formspree.io/email@email.com">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="email" name="_replyto" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-        <!-- End #contact-form -->
-    </div>
-    <!-- End #contact -->
-
-    <footer>
+	
+    <footer id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-sm-5 copyright">
                     <p>
-                        Copyright &copy; 2020 YOUR NAME
+                        Copyright &copy; 2021 백예린
                     </p>
                 </div>
                 <div class="col-sm-2 top">
                     <span id="to-top">
                         <i class="fa fa-chevron-up" aria-hidden="true"></i>
                     </span>
-                </div>
-                <div class="col-sm-5 social">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
