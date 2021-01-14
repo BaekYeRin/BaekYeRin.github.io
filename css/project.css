@@ -1,0 +1,157 @@
+.project {
+	max-width: 1000px;
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+	background: #fff;
+	border-radius: 4px;
+}
+
+.project-image {
+	position: relative;
+	width: 45%;
+	height: 100%;
+	display: inline-block;
+}
+
+.project-image img {
+	float: left;
+	height: 100%;
+	width: 100%;
+}
+
+.project-info {
+	margin: 0;
+	height: 100%;
+	position: relative;
+	display: inline-block;
+	width: 55%;
+	padding: 30px 15px;
+}
+
+.typing {
+	display: inline-block;
+	animation-name: cursor;
+	animation-duration: 0.3s;
+	animation-iteration-count: infinite;
+	border-right: 1px solid #ccc;
+}
+
+@keyframes cursor {
+	0% {
+		border-right: 1px solid #fff;
+	}
+	50% {
+		border-right: 1px solid #000;
+	}
+	100% {
+		border-right: 1px solid #fff;
+	}
+}
+
+.project-info h4 {
+	font-weight: 500;
+	color: #374054;
+	margin: 0 0 25px 0;
+}
+
+.project-info p:nth-child(4) {
+	margin-bottom: 25px;
+}
+
+.skill-div {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.skill-div .skill-span {
+	background: #fdd300;
+	color: #faf8f5;
+	vertical-align: middle;
+	align-items: center;
+	border-radius: 4px;
+	display: inline-flex;
+	height: 2em;
+	justify-content: center;
+	white-space: nowrap;
+	line-height: 1.5;
+	margin: 0 .5rem .5rem 0;
+	padding: 0 .75em;
+	transition: .2s ease-in;
+	font-size: 0.9em;
+}
+
+.skill-div .skill-span:hover {
+	background: #ffe879;
+}
+
+.about-list h4 {
+	margin-bottom: 5px;
+	color: #fdd300;
+}
+
+.about-list ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
+.about-list ul li {
+	color: #74808a;
+}
+
+.about-list ul li:before {
+	content: ">";
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0px 5px 6px 0px;
+}
+
+.card-div {
+	text-align: left;
+	width: 430px;
+	height: 230px;
+	background: #fff;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 5px 5px 5px #C2C2C2;
+	display: inline-block;
+	margin-bottom: 15px;
+}
+
+.card-img-div {
+	left: 5px;
+	display: inline-block;
+	position: relative;
+	width: 36%;
+	text-align: left;
+	top: -59px;
+}
+
+.card-img {
+	width: 100%;
+}
+
+.card-content {
+	display: inline-block;
+	text-align: right;
+	width: 59%;
+	margin:0;
+}
+
+.card-name-eng {
+	margin: 80px 0 0 0;
+	font-weight: 500;
+}
+
+.card-name {
+	margin: 0 0 10px 0;
+}
+
+.email-img {
+	width: 17px;
+	margin-right: 7px;
+}
