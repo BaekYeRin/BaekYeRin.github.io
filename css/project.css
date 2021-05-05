@@ -26,7 +26,16 @@
 	position: relative;
 	display: inline-block;
 	width: 55%;
-	padding: 30px 15px;
+	padding: 25px 15px;
+}
+
+.project-info p {
+	text-indent: -80px;
+	margin-left: 80px;
+}
+
+.project-info p span {
+	font-weight: bold;
 }
 
 .typing {
