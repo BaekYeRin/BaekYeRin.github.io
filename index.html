@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-	<link href="css/project.css" rel="stylesheet">
+	<link href="css/info.css" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	
 	<script>
@@ -56,7 +56,10 @@
             </li>
 			<li>
                 <a href="#skills">Skills</a>
-            </li>			
+            </li>
+			<li>
+                <a href="#experience">Experience</a>
+            </li>
             <li>
                 <a href="#projects">Projects</a>
             </li>
@@ -82,14 +85,14 @@
     </div>
     <!-- End #lead -->
 
-    <div id="about" class="background-alt">
+    <div id="about">
         <div class="container">
             <div class="row">
                 <div class="col-md-3" style="width: 20%">
                     <h2 class="heading">About Me</h2>
                 </div>
                 <div class="col-md-9" style="width: 79%">
-                    <div class="card-div">
+                    <div class="card-div" style="background:#f2f1f1;">
 						<div class="card-img-div">
 							<img class="card-img" src="images/BAEKYERIN.jpg" />
 						</div>
@@ -100,10 +103,8 @@
 						</div>
 					</div>
 					<div class="about-list" style="display: inline-block;">
-						<h4>개발자 과정</h4>
+						<h4>개발교육</h4>
 						<ul>
-							<li>2021.06 ~ 현&nbsp;&nbsp;&nbsp;&nbsp;재 : 한국전자금융 근무</li>
-							<li>2018.09 ~ 2021.03 : 스마트포트테크놀로지 근무</li>
 							<li>2018.03 ~ 2020.02 : 한국방송통신대학교 컴퓨터과학과 졸업</li>
 							<li>2017.06 ~ 2017.11 : 한국정보기술연구원의 공공 데이터 기반 자바 애플리케이션 개발자 과정 교육 수료</li>
 							<li>2014.03 ~ 2017.02 : 한양여자대학교 정보경영과(컴퓨터공학계열) 졸업</li>
@@ -129,7 +130,7 @@
     </div>
     <!-- End #about -->
 
-	<div id="skills">
+	<div id="skills" class="background-alt">
         <h2 class="heading">Skills</h2>
         <ul>
 			<li>JAVA</li>
@@ -149,36 +150,79 @@
     </div>
     <!-- End #skills -->
 	
+	<div id="experience">
+        <h2 class="heading">Experience</h2>
+        <div class="container">
+            <div class="row">
+				<div class="experienceInfo borderBottomDashed">
+					<div class="titleInfo">
+						<h3>한국전자금융</h3>
+						<p>2021. 06. 21 ~ 현재</p>
+					</div>
+					<div class="detailInfo">
+						<ul>
+							<li>무인주차시스템(NICEPARK) 웹서비스 개발/운영</li>
+							<ul>
+								<li>무인주차시스템 관리를 위한 관리자/위탁사 웹서비스 개발</li>
+								<li>정기권 구매, 모바일 사전정산 등 일반 사용자 웹서비스 개발</li>
+								<li>시스템과 주차 장비 간의 TCP/IP Socket 전문 통신 개발</li>
+								<li>파일 권한 설정, 디렉터리 접근 설정 등 WAS/WEB 서버 보안 개선</li>
+								<li>서비스 및 서버 장애 대응</li>
+							</ul>
+							<li>대형주차장 연동 개발/운영</li>
+							<ul>
+								<li>회원 인증/정산을 위한 롯데월드 어드벤처 부산, 모두의 주차장 등 다른 업체와의 REST API 연동 개발</li>
+								<li>특정 주차장 전용 서비스 이용 페이지 개발</li>
+							</ul>
+						</ul>
+					</div>
+				</div>
+				<div class="experienceInfo">
+					<div class="titleInfo">
+						<h3>스마트포트테크놀로지</h3>
+						<p>2018. 09. 10 ~ 2021. 03. 31</p>
+					</div>
+					<div class="detailInfo">
+						<ul>
+							<li>공항 운영 관리 시스템, 항공사 운항 관리 시스템 솔루션 개발</li>
+							<ul>
+								<li>공항/항공사별 일일 운항 스케줄 관리 개발</li>
+								<li>디스플레이 통제 관리 개발</li>
+								<li>ADS-B 기반의 실시간 항공기 추적 관리 개발</li>
+							</ul>
+							<li>SI 개발</li>
+							<ul>
+								<li>AIR PREMIA 통합 MRO 시스템 구축</li>
+								<li>한국산업기술진흥원 K-SENS 활용 e-HRD 시스템 고도화</li>
+								<li>Diana 영업관리 App 구축</li>
+								<li>제주항공 차세대 부킹플랫폼 구축</li>
+								<li>제주항공 홈페이지 NEW CLASS</li>
+								<li>한국이민재단 사회통합 프로그램 홈페이지 구축</li>
+							</ul>
+						</ul>
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
+    <!-- End #skills -->
+	
     <div id="projects" class="background-alt">
         <h2 class="heading">Projects</h2>
         <div class="container">
             <div class="row">
-				<div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project/no_image.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>노상주차장시스템 개발</h3>
-                        <h4>근무처 : 한국전자금융</h4>
-						<div>
-							<table class="project-info-table">
-								<tr>
-									<th>[기　　간]</th>
-									<td>2022. 06 ~ 현재</td>
-								</tr>
-								<tr>
-									<th>[수행업무]</th>
-									<td>
-										<ul>
-											<li>- 노상주차장 관리시스템 개발</li>
-											<li>- 노상주차장 APP과의 REST API 연동 개발</li>
-										</ul>
-									</td>
-								</tr>
-							</table>
-						</div>
-                        <div class="skill-div">
+				<div class="projectInfo">
+					<div class="titleInfo projectTitleInfo">
+						<h3>노상주차장시스템 개발</h3>
+						<h4>[근무처] 한국전자금융</h4>
+						<p>2022. 06 ~ 2022. 11</p>
+					</div>
+					<div class="detailInfo projectDetailInfo">
+						<ul>
+							<li>노상주차장 관리시스템 개발</li>
+							<li>노상주차장 MW와의 전문 통신 개발</li>
+						</ul>
+						<div class="skill-div">
 							<span class="skill-span">JAVA</span>
 							<span class="skill-span">Spring Framework</span>
 							<span class="skill-span">JSP</span>
@@ -190,78 +234,22 @@
 							<span class="skill-span">DB2</span>
 							<span class="skill-span">SVN</span>
 						</div>
-                    </div>
-                    <!-- End .project-info -->
+					</div>
                 </div>
-                <!-- End .project -->
 				
-				<!-- 
-				<div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project/no_image.png" />
-                    </div>
-                    <div class="project-info">
-                        <h3>SRT 주차장 모바일사전정산 개발</h3>
-                        <h4>근무처 : 한국전자금융</h4>
-						<div>
-							<table class="project-info-table">
-								<tr>
-									<th>[기　　간]</th>
-									<td>2022. 04 ~ 2022. 05</td>
-								</tr>
-								<tr>
-									<th>[수행업무]</th>
-									<td>
-										<ul>
-											<li>- </li>
-										</ul>
-									</td>
-								</tr>
-							</table>
-						</div>
-                        <div class="skill-div">
-							<span class="skill-span">JAVA</span>
-							<span class="skill-span">JSP</span>
-							<span class="skill-span">HTML</span>
-							<span class="skill-span">CSS</span>
-							<span class="skill-span">JavaScript</span>
-							<span class="skill-span">jQuery</span>
-							<span class="skill-span">Vue.js</span>
-							<span class="skill-span">Spring Framework</span>
-							<span class="skill-span">DB2</span>
-							<span class="skill-span">SVN</span>
-						</div>
-                    </div>
-                </div>
-				-->
-				
-				<div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project/project_lotte.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>롯데월드 어드벤처 부산 주차장 연동 개발</h3>
-                        <h4>근무처 : 한국전자금융</h4>
-						<div>
-							<table class="project-info-table">
-								<tr>
-									<th>[기　　간]</th>
-									<td>2022. 01 ~ 2022. 03</td>
-								</tr>
-								<tr>
-									<th>[수행업무]</th>
-									<td>
-										<ul>
-											<li>- 발렛파킹 예약/취소 및 관리화면 개발</li>
-											<li>- 인터넷 티켓과 연결되는 사전정산사이트 개발</li>
-											<li>- 롯데월드와의 티켓 정보 및 혜택 관리 관련 API 연동 개발</li>
-										</ul>
-									</td>
-								</tr>
-							</table>
-						</div>
-                        <div class="skill-div">
+				<div class="projectInfo">
+					<div class="titleInfo projectTitleInfo">
+						<h3>롯데월드 어드벤처 부산 주차장 연동 개발</h3>
+						<h4>[근무처] 한국전자금융</h4>
+						<p>2022. 01 ~ 2022. 03</p>
+					</div>
+					<div class="detailInfo projectDetailInfo">
+						<ul>
+							<li>발렛파킹 예약/취소 및 관리화면 개발</li>
+							<li>인터넷 티켓과 연결되는 사전정산사이트 개발</li>
+							<li>롯데월드와의 티켓 정보 및 혜택 관리 관련 API 연동 개발</li>
+						</ul>
+						<div class="skill-div">
 							<span class="skill-span">JAVA</span>
 							<span class="skill-span">Spring Framework</span>
 							<span class="skill-span">JSP</span>
@@ -273,38 +261,22 @@
 							<span class="skill-span">DB2</span>
 							<span class="skill-span">SVN</span>
 						</div>
-                    </div>
-                    <!-- End .project-info -->
+					</div>
                 </div>
-                <!-- End .project -->
 				
-				<div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project/project_ocs.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>OCS 주차장 연동 개발</h3>
-                        <h4>근무처 : 한국전자금융</h4>
-						<div>
-							<table class="project-info-table">
-								<tr>
-									<th>[기　　간]</th>
-									<td>2021. 11 ~ 2021. 12</td>
-								</tr>
-								<tr>
-									<th>[수행업무]</th>
-									<td>
-										<ul>
-											<li>- OCS 요금 및 할인설정 개발</li>
-											<li>- OCS 영수증 QR코드 인식 및 할인 적용 개발</li>
-											<li>- 1일권 관련 관리화면, 주차 정산기와의 전문통신 등 개발</li>
-										</ul>
-									</td>
-								</tr>
-							</table>
-						</div>
-                        <div class="skill-div">
+                <div class="projectInfo">
+					<div class="titleInfo projectTitleInfo">
+						<h3>OCS 주차장 연동 개발</h3>
+						<h4>[근무처] 한국전자금융</h4>
+						<p>2021. 11 ~ 2021. 12</p>
+					</div>
+					<div class="detailInfo projectDetailInfo">
+						<ul>
+							<li>OCS 요금 및 할인설정 개발</li>
+							<li>OCS 영수증 QR코드 인식 및 할인 적용 개발</li>
+							<li>1일권 관련 관리화면, 주차 정산기와의 전문통신 등 개발</li>
+						</ul>
+						<div class="skill-div">
 							<span class="skill-span">JAVA</span>
 							<span class="skill-span">Spring Framework</span>
 							<span class="skill-span">JSP</span>
@@ -316,38 +288,22 @@
 							<span class="skill-span">DB2</span>
 							<span class="skill-span">SVN</span>
 						</div>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-				
-				<div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project/project_skku.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>성균관대학교 주차장 연동 개발</h3>
-                        <h4>근무처 : 한국전자금융</h4>
-						<div>
-							<table class="project-info-table">
-								<tr>
-									<th>[기　　간]</th>
-									<td>2021. 07 ~ 2021. 09</td>
-								</tr>
-								<tr>
-									<th>[수행업무]</th>
-									<td>
-										<ul>
-											<li>- 캠퍼스별 모바일 사전정산, 정기권 신청/승인 개발</li>
-											<li>- 신분별 요금 정책 및 혜택 적용 개발</li>
-											<li>- 사용자 이용정보 관리 개발</li>
-										</ul>
-									</td>
-								</tr>
-							</table>
-						</div>
-                        <div class="skill-div">
+					</div>
+				</div>
+			
+                <div class="projectInfo">
+					<div class="titleInfo projectTitleInfo">
+						<h3>성균관대학교 주차장 연동 개발</h3>
+						<h4>[근무처] 한국전자금융</h4>
+						<p>2021. 07 ~ 2021. 09</p>
+					</div>
+					<div class="detailInfo projectDetailInfo">
+						<ul>
+							<li>캠퍼스별 모바일 사전정산, 정기권 신청/승인 개발</li>
+							<li>신분별 요금 정책 및 혜택 적용 개발</li>
+							<li>사용자 이용정보 관리 개발</li>
+						</ul>
+						<div class="skill-div">
 							<span class="skill-span">JAVA</span>
 							<span class="skill-span">Spring Framework</span>
 							<span class="skill-span">JSP</span>
@@ -359,76 +315,23 @@
 							<span class="skill-span">DB2</span>
 							<span class="skill-span">SVN</span>
 						</div>
-                    </div>
-                    <!-- End .project-info -->
+					</div>
                 </div>
-                <!-- End .project -->
 				
-				<div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project/project_npmu.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>무인주차시스템(NICEPARK) 개발/운영</h3>
-                        <h4>근무처 : 한국전자금융</h4>
-						<div>
-							<table class="project-info-table">
-								<tr>
-									<th>[기　　간]</th>
-									<td>2021. 06 ~ 현재</td>
-								</tr>
-								<tr>
-									<th>[수행업무]</th>
-									<td>
-										<ul>
-											<li>- 정기권 구매, 모바일 사전정산 등 일반 사용자 웹서비스 개발/운영</li>
-											<li>- 무인주차시스템 관리를 위한 관리자, 위탁사 웹서비스 개발/운영</li>
-											<li>- 신규 기능 개발 및 WEB/WAS 보안 취약점 조치</li>
-										</ul>
-									</td>
-								</tr>
-							</table>
-						</div>
-                        <div class="skill-div">
-							<span class="skill-span">JAVA</span>
-							<span class="skill-span">Spring Framework</span>
-							<span class="skill-span">JSP</span>
-							<span class="skill-span">HTML</span>
-							<span class="skill-span">CSS</span>
-							<span class="skill-span">JavaScript</span>
-							<span class="skill-span">jQuery</span>
-							<span class="skill-span">Vue.js</span>
-							<span class="skill-span">DB2</span>
-							<span class="skill-span">SVN</span>
-						</div>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-				
-				<div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project/no_image.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>통합 MRO 시스템 구축</h3>
-						<h4 class="mb3">근무처 : 스마트포트테크놀로지</h4>
-                        <h4>발주처 : AIR PREMIA</h4>
-						<div>
-							<table class="project-info-table">
-								<tr>
-									<th>[기　　간]</th>
-									<td>2021. 01 ~ 2021. 03</td>
-								</tr>
-								<tr>
-									<th>[수행업무]</th>
-									<td>온라인 체크인, 탑승권 확인, 예약 변경 개발</td>
-								</tr>
-							</table>
-						</div>
-                        <div class="skill-div">
+                <div class="projectInfo">
+					<div class="titleInfo projectTitleInfo">
+						<h3>통합 MRO 시스템 구축</h3>
+						<h4>[근무처]스마트포트테크놀로지</h4>
+						<h4>[발주처]AIR PREMIA</h4>
+						<p>2021. 01 ~ 2021. 03</p>
+					</div>
+					<div class="detailInfo projectDetailInfo">
+						<ul>
+							<li>온라인 체크인 신청, 확인 개발</li>
+							<li>탑승권 확인, 안내 문자 개발</li>
+							<li>예약 변경 개발</li>
+						</ul>
+						<div class="skill-div">
 							<span class="skill-span">Kotlin</span>
 							<span class="skill-span">Spring Boot</span>
 							<span class="skill-span">React</span>
@@ -436,32 +339,23 @@
 							<span class="skill-span">MariaDB</span>
 							<span class="skill-span">Git</span>
 						</div>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
+					</div>
+				</div>
 				
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project/project_kiat.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>K-SENS 활용 e-HRD 시스템 고도화</h3>
-                        <h4 class="mb3">근무처 : 스마트포트테크놀로지</h4>
-                        <h4>발주처 : 한국산업기술진흥원</h4>
-						<div>
-							<table class="project-info-table">
-								<tr>
-									<th>[기　　간]</th>
-									<td>2020. 09 ~ 2020. 12</td>
-								</tr>
-								<tr>
-									<th>[수행업무]</th>
-									<td>부서현황, 역량 검사 및 직원/부서장 결과 확인, 경력관리, 직원/부서장 결재관리 개발</td>
-								</tr>
-							</table>
-						</div>
+				<div class="projectInfo">
+					<div class="titleInfo projectTitleInfo">
+						<h3>K-SENS 활용 e-HRD 시스템 고도화</h3>
+						<h4>[근무처] 스마트포트테크놀로지</h4>
+						<h4>[발주처] 한국산업기술진흥원</h4>
+						<p>2020. 09 ~ 2020. 12</p>
+					</div>
+					<div class="detailInfo projectDetailInfo">
+						<ul>
+							<li>부서 현황 개발</li>
+							<li>역량 검사 및 직원/부서장 결과 확인 개발</li>
+							<li>경력관리 개발</li>
+							<li>직원/부서장 결재관리 개발</li>
+						</ul>
 						<div class="skill-div">
 							<span class="skill-span">JAVA</span>
 							<span class="skill-span">Spring Framework</span>
@@ -473,32 +367,21 @@
 							<span class="skill-span">MySQL</span>
 							<span class="skill-span">Git</span>
 						</div>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
+					</div>
+				</div>
 				
-				<div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project/project_fts.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>ADS-B 기반 실시간 항공기 추적 운항 통제시스템 개발</h3>
-                        <h4 class="mb3">근무처 : 스마트포트테크놀로지</h4>
-                        <h4>발주처 : 중소기업기술개발지원사업</h4>
-						<div>
-							<table class="project-info-table">
-								<tr>
-									<th>[기　　간]</th>
-									<td>2020. 06 ~ 2021. 02</td>
-								</tr>
-								<tr>
-									<th>[수행업무]</th>
-									<td>항공기 위치 시각화 모듈 및 고도 그래프 화면 개발</td>
-								</tr>
-							</table>
-						</div>
+				<!-- <div class="projectInfo">
+					<div class="titleInfo projectTitleInfo">
+						<h3>ADS-B 기반 실시간 항공기 추적 운항 통제시스템 개발</h3>
+						<h4>[근무처] 스마트포트테크놀로지</h4>
+						<h4>[발주처] 중소기업기술개발지원사업</h4>
+						<p>2020. 06 ~ 2021. 02</p>
+					</div>
+					<div class="detailInfo projectDetailInfo">
+						<ul>
+							<li>항공기 위치 시각화 모듈 개발</li>
+							<li>고도 그래프 화면 개발</li>
+						</ul>
 						<div class="skill-div">
 							<span class="skill-span">JAVA</span>
 							<span class="skill-span">Spring Framework</span>
@@ -510,31 +393,21 @@
 							<span class="skill-span">Phoenix</span>
 							<span class="skill-span">SVN</span>
 						</div>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
+					</div>
+				</div> -->
 				
-				<div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project/project_crew.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>FOCS(Flight Operation Control System)</h3>
-                        <h4>근무처 : 스마트포트테크놀로지</h4>
-						<div>
-							<table class="project-info-table">
-								<tr>
-									<th>[기　　간]</th>
-									<td>2020. 03 ~ 2020. 04</td>
-								</tr>
-								<tr>
-									<th>[수행업무]</th>
-									<td>DB 변경(Oracle -> Phoenix) 및 승무원 WEB BRIEFING, 일일 운항 스케줄 신청/승인 기능 추가 개발</td>
-								</tr>
-							</table>
-						</div>
+				<!-- <div class="projectInfo">
+					<div class="titleInfo projectTitleInfo">
+						<h3>FOCS(Flight Operation Control System)</h3>
+						<h4>[근무처] 스마트포트테크놀로지</h4>
+						<p>2020. 03 ~ 2020. 04</p>
+					</div>
+					<div class="detailInfo projectDetailInfo">
+						<ul>
+							<li>Oracle에서 Phoenix로 DB 변경
+							<li>일일 운항 스케줄 신청/승인 기능 개발</li>
+							<li>승무원 WEB BRIEFING 개발</li>
+						</ul>
 						<div class="skill-div">
 							<span class="skill-span">JAVA</span>
 							<span class="skill-span">Spring Framework</span>
@@ -546,32 +419,21 @@
 							<span class="skill-span">Phoenix</span>
 							<span class="skill-span">SVN</span>
 						</div>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
+					</div>
+				</div> -->
 				
-				<div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project/project_diana.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>영업관리 App 구축</h3>
-                        <h4 class="mb3">근무처 : 스마트포트테크놀로지</h4>
-                        <h4>발주처 : Diana</h4>
-						<div>
-							<table class="project-info-table">
-								<tr>
-									<th>[기　　간]</th>
-									<td>2020. 02 ~ 2020. 08</td>
-								</tr>
-								<tr>
-									<th>[수행업무]</th>
-									<td>견적서 작성 및 관리, 고객별/연도별/상품별 견적 통계 확인 개발</td>
-								</tr>
-							</table>
-						</div>
+				<div class="projectInfo">
+					<div class="titleInfo projectTitleInfo">
+						<h3>영업관리 App 구축</h3>
+						<h4>[근무처] 스마트포트테크놀로지</h4>
+						<h4>[발주처] Diana</h4>
+						<p>2020. 02 ~ 2020. 08</p>
+					</div>
+					<div class="detailInfo projectDetailInfo">
+						<ul>
+							<li>견적서 작성 및 관리 개발</li>
+							<li>고객별/연도별/상품별 견적 통계 확인 개발</li>
+						</ul>
 						<div class="skill-div">
 							<span class="skill-span">JAVA</span>
 							<span class="skill-span">Swift</span>
@@ -583,31 +445,20 @@
 							<span class="skill-span">SQLite</span>
 							<span class="skill-span">SVN</span>
 						</div>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-				
-				<div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project/project_aodb.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>AODB(Airport Operation Database)</h3>
-                        <h4>근무처 : 스마트포트테크놀로지</h4>
-						<div>
-							<table class="project-info-table">
-								<tr>
-									<th>[기　　간]</th>
-									<td>2020. 01 ~ 2020. 02</td>
-								</tr>
-								<tr>
-									<th>[수행업무]</th>
-									<td>DB 변경(Oracle -> Phoenix) 및 오류 수정, 코드 관리 기능 개선</td>
-								</tr>
-							</table>
-						</div>
+					</div>
+				</div>
+			
+				<!-- <div class="projectInfo">
+					<div class="titleInfo projectTitleInfo">
+						<h3>AODB(Airport Operation Database)</h3>
+						<h4>근무처 : 스마트포트테크놀로지</h4>
+						<p>2020. 01 ~ 2020. 02</p>
+					</div>
+					<div class="detailInfo projectDetailInfo">
+						<ul>
+							<li>Oracle에서 Phoenix로 DB 변경</li>
+							<li>오류 수정 및 코드 관리 기능 개선</li>
+						</ul>
 						<div class="skill-div">
 							<span class="skill-span">JAVA</span>
 							<span class="skill-span">Spring Framework</span>
@@ -619,32 +470,22 @@
 							<span class="skill-span">Phoenix</span>
 							<span class="skill-span">SVN</span>
 						</div>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-				
-				<div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project/no_image.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>차세대 부킹플랫폼 구축</h3>
-                        <h4 class="mb3">근무처 : 스마트포트테크놀로지</h4>
-                        <h4>발주처 : 제주항공</h4>
-						<div>
-							<table class="project-info-table">
-								<tr>
-									<th>[기　　간]</th>
-									<td>2019. 09 ~ 2019. 12</td>
-								</tr>
-								<tr>
-									<th>[수행업무]</th>
-									<td>기내식, 통합멤버십, 여행자 보험 기능 개발</td>
-								</tr>
-							</table>
-						</div>
+					</div>
+				</div> -->
+			
+				<div class="projectInfo">
+					<div class="titleInfo projectTitleInfo">
+						<h3>차세대 부킹플랫폼 구축</h3>
+						<h4>[근무처] 스마트포트테크놀로지</h4>
+						<h4>[발주처]제주항공</h4>
+						<p>2019. 09 ~ 2019. 12</p>
+					</div>
+					<div class="detailInfo projectDetailInfo">
+						<ul>
+							<li>부가서비스 기내식 개발</li>
+							<li>통합멤버십(J Pass, 스포츠멤버십) 개발</li>
+							<li>여행자 보험 개발</li>
+						</ul>
 						<div class="skill-div">
 							<span class="skill-span">JAVA</span>
 							<span class="skill-span">Spring Framework</span>
@@ -657,32 +498,21 @@
 							<span class="skill-span">DB2</span>
 							<span class="skill-span">SVN</span>
 						</div>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-				
-				<div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project/project_ncl.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>홈페이지 NEW CLASS</h3>
-                        <h4 class="mb3">근무처 : 스마트포트테크놀로지</h4>
-                        <h4>발주처 : 제주항공</h4>
-						<div>
-							<table class="project-info-table">
-								<tr>
-									<th>[기　　간]</th>
-									<td>2019. 05 ~ 2019. 08</td>
-								</tr>
-								<tr>
-									<th>[수행업무]</th>
-									<td>NEW CLASS, CodeShare 부가서비스 개발</td>
-								</tr>
-							</table>
-						</div>
+					</div>
+				</div>
+			
+				<div class="projectInfo">
+					<div class="titleInfo projectTitleInfo">
+						<h3>홈페이지 NEW CLASS</h3>
+						<h4>[근무처] 스마트포트테크놀로지</h4>
+						<h4>[발주처] 제주항공</h4>
+						<p>2019. 05 ~ 2019. 08</p>
+					</div>
+					<div class="detailInfo projectDetailInfo">
+						<ul>
+							<li>NEW CLASS 운임의 수하물, 사전 좌석, 기내식 부가서비스 개발</li>
+							<li>CodeShare 부가서비스 개발</li>
+						</ul>
 						<div class="skill-div">
 							<span class="skill-span">JAVA</span>
 							<span class="skill-span">Spring Framework</span>
@@ -694,31 +524,20 @@
 							<span class="skill-span">DB2</span>
 							<span class="skill-span">SVN</span>
 						</div>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-				
-				<div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project/project_afa.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>FOCS(Flight Operation Control System)</h3>
-                        <h4>근무처 : 스마트포트테크놀로지</h4>
-						<div>
-							<table class="project-info-table">
-								<tr>
-									<th>[기　　간]</th>
-									<td>2019. 01 ~ 2019. 04</td>
-								</tr>
-								<tr>
-									<th>[수행업무]</th>
-									<td>일일 운항 스케줄 관리(생성, 수정, 취소, 회항 설정, 항공기 배치, 항공기 변경 등), 일일 운항 차트 개발</td>
-								</tr>
-							</table>
-						</div>
+					</div>
+				</div>
+			
+				<!-- <div class="projectInfo">
+					<div class="titleInfo projectTitleInfo">
+						 <h3>FOCS(Flight Operation Control System)</h3>
+						<h4>[근무처] 스마트포트테크놀로지</h4>
+						<p>2019. 01 ~ 2019. 04</p>
+					</div>
+					<div class="detailInfo projectDetailInfo">
+						<ul>
+							<li>일일 운항 스케줄 생성, 수정, 취소, 회항 설정, 항공기 배치, 항공기 변경 등 개발</li>
+							<li>일일 운항 차트 기능 개선</li>
+						</ul>
 						<div class="skill-div">
 							<span class="skill-span">JAVA</span>
 							<span class="skill-span">Spring Framework</span>
@@ -730,32 +549,23 @@
 							<span class="skill-span">Oracle</span>
 							<span class="skill-span">SVN</span>
 						</div>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-				
-				<div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project/project_kisf.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>사회통합 프로그램 홈페이지 구축</h3>
-                        <h4 class="mb3">근무처 : 스마트포트테크놀로지</h4>
-                        <h4>발주처 : 한국이민재단</h4>
-						<div>
-							<table class="project-info-table">
-								<tr>
-									<th>[기　　간]</th>
-									<td>2018. 10 ~ 2019. 01</td>
-								</tr>
-								<tr>
-									<th>[수행업무]</th>
-									<td>KG이니시스 모듈을 통한 결제 기능(카드, 실시간 계좌이체, 가상계좌, 모바일 결제 및 결제 취소, 부분 취소) 및 결제 관련 페이지 개발</td>
-								</tr>
-							</table>
-						</div>
+					</div>
+				</div> -->
+			
+				<div class="projectInfo">
+					<div class="titleInfo projectTitleInfo">
+						<h3>사회통합 프로그램 홈페이지 구축</h3>
+						<h4>[근무처] 스마트포트테크놀로지</h4>
+						<h4>[발주처] 한국이민재단</h4>
+						<p>2018. 10 ~ 2019. 01</p>
+					</div>
+					<div class="detailInfo projectDetailInfo">
+						<ul>
+							<li>KG이니시스 모듈을 통한 카드, 실시간 계좌이체, 가상계좌, 모바일 결제 및 결제 취소, 부분 취소 개발</li>
+							<li>접수확인 페이지 개발</li>
+							<li>결제 내역 확인(관리자페이지) 개발</li>
+							<li>정산 대사 작업(관리자페이지) 개발</li>
+						</ul>
 						<div class="skill-div">
 							<span class="skill-span">JAVA</span>
 							<span class="skill-span">Spring Framework</span>
@@ -767,31 +577,21 @@
 							<span class="skill-span">MySQL</span>
 							<span class="skill-span">SVN</span>
 						</div>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-				
-				<div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project/project_fids.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>FIDS(Flight Information Display System)</h3>
-                        <h4>근무처 : 스마트포트테크놀로지</h4>
-						<div>
-							<table class="project-info-table">
-								<tr>
-									<th>[기　　간]</th>
-									<td>2018. 09 ~ 2018. 09</td>
-								</tr>
-								<tr>
-									<th>[수행업무]</th>
-									<td>디스플레이 통제 관리, 디스플레이 긴급 메시지, 디스플레이 페이지 메이커 개발</td>
-								</tr>
-							</table>
-						</div>
+					</div>
+				</div>
+			
+				<!-- <div class="projectInfo">
+					<div class="titleInfo projectTitleInfo">
+						<h3>FIDS(Flight Information Display System)</h3>
+						<h4>[근무처] 스마트포트테크놀로지</h4>
+						<p>2018. 09 ~ 2018. 09</p>
+					</div>
+					<div class="detailInfo projectDetailInfo">
+						<ul>
+							<li>디스플레이 통제 관리 개발</li>
+							<li>디스플레이 긴급 메시지 기능 개발</li>
+							<li>디스플레이 페이지 메이커 개발</li>
+						</ul>
 						<div class="skill-div">
 							<span class="skill-span">JAVA</span>
 							<span class="skill-span">Spring Framework</span>
@@ -803,10 +603,8 @@
 							<span class="skill-span">Oracle</span>
 							<span class="skill-span">SVN</span>
 						</div>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
+					</div>
+				</div> -->
             </div>
         </div>
     </div>
@@ -817,7 +615,7 @@
             <div class="row">
                 <div class="col-sm-5 copyright">
                     <p>
-                        Copyright &copy; 2022 백예린
+                        Update. 2023-01-16
                     </p>
                 </div>
                 <div class="col-sm-2 top">

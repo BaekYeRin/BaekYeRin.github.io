@@ -138,7 +138,8 @@
 }
 
 .about-list ul li {
-	color: #74808a;
+	/*! color: #74808a; */
+	color: #292525;
 }
 
 .about-list ul li:before {
@@ -192,4 +193,72 @@
 .email-img {
 	width: 17px;
 	margin-right: 7px;
+}
+
+.experienceInfo {
+    position: relative;
+	max-width: 1000px;
+	margin: 0 auto 0 auto;
+	width: 100%;
+	overflow: hidden;
+	padding: 30px 20px;
+	text-align: left;
+}
+
+.projectInfo {
+	position: relative;
+    max-width: 1000px;
+	margin: 0 auto 30px auto;
+    width: 100%;
+    overflow: hidden;
+	padding: 30px 20px;
+	text-align: left;
+	background: #fff;
+    border-radius: 4px;
+}
+
+.titleInfo {
+	display: inline-block;
+	width: 35%;
+	vertical-align: top;
+}
+
+.titleInfo h3{
+	margin: 0;
+}
+
+.titleInfo h4 {
+	margin: 0 5px;
+	color: gray;
+}
+
+.projectTitleInfo {
+	width: 40%;
+}
+
+.detailInfo {
+	display: inline-block;
+	width: 64%;
+}
+
+.detailInfo ul {
+	margin: 0;
+}
+
+.detailInfo ul li {
+	margin-bottom: 5px;
+}
+
+.projectDetailInfo {
+	width: 59%;
+}
+
+.projectDetailInfo .skill-div{
+	margin-top: 30px;
+	margin-left: 20px;
+	float: left;
+}
+
+.borderBottomDashed {
+	border-bottom: dashed 1.5px #bbb;
 }
