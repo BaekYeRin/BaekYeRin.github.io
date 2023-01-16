@@ -105,8 +105,8 @@
 }
 
 .skill-div .skill-span {
-	background: #3eb3c7;
-	color: #f3f3f3;
+	background: #fdd300;
+	color: #faf8f5;
 	vertical-align: middle;
 	align-items: center;
 	border-radius: 4px;
@@ -122,12 +122,12 @@
 }
 
 .skill-div .skill-span:hover {
-	background: #56dbf3;
+	background: #ffe879;
 }
 
 .about-list h4 {
 	margin-bottom: 5px;
-	color: #3eb3c7;
+	color: #fdd300;
 }
 
 .about-list ul {
