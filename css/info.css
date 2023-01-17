@@ -247,10 +247,6 @@
 	color: gray;
 }
 
-.projectTitleInfo {
-	width: 40%;
-}
-
 .detailInfo {
 	display: inline-block;
 	width: 64%;
@@ -264,8 +260,12 @@
 	margin-bottom: 5px;
 }
 
+.projectTitleInfo {
+	width: 42%;
+}
+
 .projectDetailInfo {
-	width: 59%;
+	width: 57%;
 }
 
 .projectDetailInfo .skill-div{
