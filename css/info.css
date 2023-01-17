@@ -149,6 +149,21 @@
 	padding: 0px 5px 6px 0px;
 }
 
+.about-detail {
+	width: 90%;
+	display: inline-block;
+	word-break: keep-all;
+	line-height: 1.9;
+}
+
+.about-detail p {
+	color: #000 !important;
+}
+
+.about-detail p:not(:last-child) {
+	margin-bottom: 15px !important;
+}
+
 .card-div {
 	text-align: left;
 	width: 430px;
@@ -158,7 +173,7 @@
 	padding: 20px;
 	box-shadow: 5px 5px 5px #C2C2C2;
 	display: inline-block;
-	margin-bottom: 15px;
+	margin-bottom: 45px;
 }
 
 .card-img-div {
@@ -195,7 +210,7 @@
 	margin-right: 7px;
 }
 
-.experienceInfo {
+.experienceInfo, .etcInfo {
     position: relative;
 	max-width: 1000px;
 	margin: 0 auto 0 auto;
@@ -261,4 +276,30 @@
 
 .borderBottomDashed {
 	border-bottom: dashed 1.5px #bbb;
+}
+
+.etcInfo .titleInfo {
+	width: 20%;
+}
+
+.etcInfo .titleInfo h3 {
+	margin-top: 10px;
+}
+
+.etcInfo .detailInfo {
+	width: 79%;
+}
+
+.etcInfo .detailInfo table {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0 10px;
+}
+
+.etcInfo .detailInfo table tr td {
+	vertical-align: text-top;
+}
+
+.etcInfo .detailInfo table tr td:first-child {
+	width: 30%;
 }
