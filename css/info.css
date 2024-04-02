@@ -105,8 +105,8 @@
 }
 
 .skill-div .skill-span {
-	background: #fdd300;
-	color: #faf8f5;
+	background: #3eb3c7;
+	color: #f3f3f3;
 	vertical-align: middle;
 	align-items: center;
 	border-radius: 4px;
@@ -122,12 +122,12 @@
 }
 
 .skill-div .skill-span:hover {
-	background: #ffe879;
+	background: #56dbf3;
 }
 
 .about-list h4 {
 	margin-bottom: 5px;
-	color: #fdd300;
+	color: #3eb3c7;
 }
 
 .about-list ul {
@@ -256,8 +256,16 @@
 	margin: 0;
 }
 
+.detailInfo .infoTit {
+	font-weight: bold;
+}
+
 .detailInfo ul li {
 	margin-bottom: 5px;
+}
+
+.detailInfo ul li div {
+	font-size: 14px;
 }
 
 .projectTitleInfo {
