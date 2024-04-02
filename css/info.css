@@ -247,6 +247,12 @@
 	color: gray;
 }
 
+.titleInfo img {
+    height: 35px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
 .detailInfo {
 	display: inline-block;
 	width: 64%;
